@@ -5,5 +5,5 @@ var passwordTxt = document.querySelector('#PASS');
 
 loginBtn.addEventListener('click', loginBtnUpdate);
 
-console.log("")
+console.log(usernameTxt)
 
