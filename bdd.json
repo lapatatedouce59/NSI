@@ -1,0 +1,95 @@
+{
+    "users": [
+    {
+        "id": "a.cfr",
+        "pwd": "jaimeleschats",
+        "rank": "admin"
+    },
+    {
+        "id": "t.vdz",
+        "pwd": "azerty123",
+        "rank": "user"
+    },
+    {
+        "id": "c.dbv",
+        "pwd": "gobougobou",
+        "rank": "user"
+    },
+    {
+        "id": "t.lms",
+        "pwd": "lolipop",
+        "rank": "user"
+    }
+],
+
+    "pets": [
+    {
+        "lions":[
+            {
+                "name":"Doris",
+                "lastMedicalVisit":"12/09/22",
+                "sex":"female",
+                "age":"19"
+            },
+            {
+                "name":"Tony",
+                "lastMedicalVisit":"19/09/22",
+                "sex":"male",
+                "age":"15"
+            }
+        ],
+        "girafe":[
+            {
+                "name":"Helga",
+                "lastMedicalVisit":"10/09/22",
+                "sex":"female",
+                "age":"3"
+            },
+            {
+                "name":"Raymond",
+                "lastMedicalVisit":"14/09/22",
+                "sex":"male",
+                "age":"9"
+            }
+        ],
+        "zebras":[
+            {
+                "name":"Eugenio",
+                "lastMedicalVisit":"20/10/22",
+                "sex":"male",
+                "age":"1"
+            },
+            {
+                "name":"Gabriela",
+                "lastMedicalVisit":"19/10/22",
+                "sex":"female",
+                "age":"4"
+            },
+            {
+                "name":"Pierre",
+                "lastMedicalVisit":"1/10/22",
+                "sex":"male",
+                "age":"16"
+            }
+        ],
+        "hippopotamus":[
+            {
+                "name":"Lena",
+                "lastMedicalVisit":"22/09/22",
+                "sex":"female",
+                "age":"40"
+            },
+            {
+                "name":"Octave",
+                "lastMedicalVisit":"25/09/22",
+                "sex":"male",
+                "age":"52"
+            }
+        ]
+
+    }
+    
+]
+
+}
+
