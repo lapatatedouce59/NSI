@@ -5,10 +5,13 @@
 
 (async ()=> {
     data=await(await fetch('../bdd.json')).json()
+    console.log(data)
 })()
+
 let data = {}
 
-console.log(data)
+
+
 
 async function validate(){
     let usernameTxt = document.getElementById('USER').value
