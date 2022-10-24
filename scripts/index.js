@@ -1,9 +1,19 @@
-var loginBtn = document.querySelector('#SUBMIT');
+//loginBtn.addEventListener('click', loginBtnUpdate);
+//var loginBtn = document.querySelector('#SUBMIT');
 
-var usernameTxt = document.getElementById('USER').value
-var passwordTxt = document.querySelector('#PASS');
 
-loginBtn.addEventListener('click', loginBtnUpdate);
 
-console.log(usernameTxt)
+(async ()=> {
+    data=await(await fetch('../bdd.json')).json()
+})()
+let data = {}
+
+console.log(data)
+
+async function validate(){
+    let usernameTxt = document.getElementById('USER').value
+    let passwordTxt = document.getElementById('PASS').value
+    alert("Utilisateur "+usernameTxt+" et mot de passe "+passwordTxt)
+}
+
 
