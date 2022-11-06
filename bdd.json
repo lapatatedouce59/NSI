@@ -3,22 +3,26 @@
     {
         "id": "a.cfr",
         "pwd": "jaimeleschats",
-        "rank": "admin"
+        "rank": "admin",
+        "uname": "Amaury"
     },
     {
         "id": "t.vdz",
         "pwd": "azerty123",
-        "rank": "user"
+        "rank": "user",
+        "uname": "Tom"
     },
     {
         "id": "c.dbv",
         "pwd": "gobougobou",
-        "rank": "user"
+        "rank": "user",
+        "uname": "Cléo"
     },
     {
         "id": "t.lms",
         "pwd": "lolipop",
-        "rank": "user"
+        "rank": "user",
+        "uname": "Tamara"
     }
 ],
 
@@ -257,6 +261,46 @@
                 "lastMedicalVisit":"19/10/22",
                 "sex":"female",
                 "age":"17"
+            }
+        ],
+        "monkeys":[
+            {
+                "name":"Isobelle",
+                "lastMedicalVisit":"13/10/22",
+                "sex":"female",
+                "age":"19"
+            },
+            {
+                "name":"Mustafa",
+                "lastMedicalVisit":"06/11/22",
+                "sex":"male",
+                "age":"8"
+            },
+            {
+                "name":"Camille",
+                "lastMedicalVisit":"07/11/22",
+                "sex":"female",
+                "age":"12"
+            },
+            {
+                "name":"Lily",
+                "lastMedicalVisit":"08/11/22",
+                "sex":"female",
+                "age":"15"
+            }
+        ],
+        "pandas":[
+            {
+                "name":"Arla",
+                "lastMedicalVisit":"13/11/22",
+                "sex":"female",
+                "age":"18"
+            },
+            {
+                "name":"Carson",
+                "lastMedicalVisit":"11/11/22",
+                "sex":"male",
+                "age":"7"
             }
         ],
         "lemurs":[
