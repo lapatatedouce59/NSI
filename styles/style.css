@@ -1,3 +1,64 @@
+body, div {
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    margin:auto;
+}
+#BlocMenu{
+    width: 500px;
+    height:600px;
+    background-color: rgb(220, 245, 205);
+    border-radius: 30px;
+    border-color: black;
+    border-width: 10px;
+}
+#ConnexionSoigneurs{
+    color:white;
+    font-size: 50px;
+    -webkit-text-stroke:2px;
+    -webkit-text-stroke-color: black;
+}
+
 #incorrectPass{
     color: red;
+}
+#ContactProb{
+    color:black;
+}
+#Renseignement{
+    color:rgb(174,174,174)
+}
+#MdpForget{
+    color:rgb(0,0,255);
+    font-size: 15px;
+}
+#InputCase{
+    width: 395px;
+    height: 60px;
+    border-radius: 30px;
+    background-color:rgb(214,214,214);
+    color:rgb(174,174,174);
+    font-style: italic;
+    text-align: left;
+    margin:auto;
+}
+#BoutonConnexion{
+    width: 200px;
+    height: 60px;
+    border-radius: 30xp;
+    background-color: rgb(75,180,50);
+    border-width: 10px;
+    border-color:black;
+    color:white;
+    font-size: 50px;
+    -webkit-text-stroke:2px;
+    -webkit-text-stroke-color: black;
+}
+#ImageGauche{
+    float: left;
+    size:auto;
+}
+#ImageDroite{
+    float: right;
+    size:auto;
 }
