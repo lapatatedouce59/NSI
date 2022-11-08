@@ -7,9 +7,18 @@
     <title>Page Soigneurs</title>
     <script type="text/javascript" src="./scripts/index.js"></script>
     <script type="text/javascript" src="./scripts/animals.js"></script>
+    <link rel="stylesheet" href="./styles/private.css">
 </head>
 <body>
-    <h1>Espace Soigneurs</h1>
+    <div id="headerp2">
+        <div class="title">
+            <h4 id="headertext">Espace soigneurs</h4>
+        </div>
+        <div class="currentLoggedZone">
+            <h4 id="currentUserText">Nom</h4>
+            <img src="./img/profile.png" alt="" id="imgProfile">
+        </div>
+    </div>
     <h2 id="currentUserText"></h2>
     <input type="button" id="lions" value="Lions" onclick="loadAnimalView('lions')">
     <input type="button" id="girafes" value="Girafes" onclick="loadAnimalView('girafe')">

@@ -59,7 +59,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Lions"
 
                 }
         
@@ -104,7 +104,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Girafes"
 
                 }
         
@@ -193,7 +193,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Hippopotames"
 
                 }
         
@@ -236,7 +236,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Eléphants"
 
                 }
         
@@ -279,7 +279,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Flamants roses"
 
                 }
         
@@ -322,7 +322,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Pélicans"
 
                 }
         
@@ -365,7 +365,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Loups blancs"
 
                 }
         
@@ -408,7 +408,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Rhinoceros"
 
                 }
         
@@ -451,7 +451,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Phoques"
 
                 }
         
@@ -494,7 +494,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Singes"
 
                 }
         
@@ -537,7 +537,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Pandas"
 
                 }
         
@@ -580,7 +580,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Lémuriens"
 
                 }
         
@@ -623,7 +623,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Crocodiles"
 
                 }
         
@@ -666,7 +666,7 @@ function showAllAnimalElements(animalType){
                 if(localStorage.getItem('currentChoosenAnimal')){
                     
                     let headerText = document.getElementById('header');
-                    headerText.innerText = "Zèbres"
+                    headerText.innerText = "Serpents"
 
                 }
         

@@ -1,0 +1,34 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#headerp2{
+    background: #313131;
+    padding: 20px;
+
+    margin-bottom: 30px;
+    display: grid;
+    width: 1900px;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 400px 300px;
+}
+
+#currentUserText{
+    font-size: 40px;
+    color: white;
+    float:left;
+}
+
+#headertext{
+    color: white;
+    font-size: 40px;
+}
+
+#imgProfile{
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
