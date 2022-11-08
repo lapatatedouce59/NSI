@@ -676,6 +676,5 @@ function showAllAnimalElements(animalType){
             }
             break;
         }
-        console.log('Informations affichées')
-        return true;
+        return console.log('Animaux de catégorie ' +animalType+' affichés.')
 }
