@@ -8,6 +8,7 @@ let data = {}*/
 
 async function loadAnimalView(animalType){
     console.log("Animal choisi: " + animalType)
+    localStorage.setItem('currentChoosenAnimal', animalType)
     window.location = '../animalViews.html';
 }
 
@@ -15,6 +16,11 @@ async function loadAnimalView(animalType){
 (async ()=> {
     data=await(await fetch('../bdd.json')).json()
     console.log('Base de donnée globale chargé.')
+    if(localStorage.getItem('currentChoosenAnimal')){
+        showAllAnimalElements(localStorage.getItem('currentChoosenAnimal'))
+    } else {
+        console.log("Aucun animal n'est séléctionné, erreur du code!")
+    }
 })()
 
 function showAllAnimalElements(animalType){
@@ -29,36 +35,43 @@ function showAllAnimalElements(animalType){
                 let nameText = document.createElement('h2')
                 nameText.setAttribute("class", "animalDetails");
                 nameText.setAttribute("id", "animalName");
-                nameText.appendChild(document.createTextNode(lions.name))
+                nameText.appendChild(document.createTextNode(lion.name))
                 div.appendChild(nameText)
         
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(lions.age))
+                ageText.appendChild(document.createTextNode('Âge: '+lion.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(lions.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +lion.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(lions.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+lion.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
                 document.getElementById("list").appendChild(tree);
             }
         
-                break;
+        break;
 
             case 'girafe':
-            for(let girafe of data.pets.girafe){
+            for(let giraf of data.pets.girafe){
                 let tree = document.createDocumentFragment();
                 let div = document.createElement("div");
                 div.setAttribute('class', "box")
@@ -67,26 +80,33 @@ function showAllAnimalElements(animalType){
                 let nameText = document.createElement('h2')
                 nameText.setAttribute("class", "animalDetails");
                 nameText.setAttribute("id", "animalName");
-                nameText.appendChild(document.createTextNode(girafe.name))
+                nameText.appendChild(document.createTextNode(giraf.name))
                 div.appendChild(nameText)
         
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(girafe.age))
+                ageText.appendChild(document.createTextNode('Âge: '+giraf.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(girafe.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +giraf.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(girafe.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+giraf.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
@@ -111,20 +131,27 @@ function showAllAnimalElements(animalType){
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(zebra.age))
+                ageText.appendChild(document.createTextNode('Âge: '+zebra.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(zebra.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +zebra.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(zebra.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+zebra.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
@@ -148,20 +175,27 @@ function showAllAnimalElements(animalType){
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(hippopotamus.age))
+                ageText.appendChild(document.createTextNode('Âge: '+hippopotamus.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(hippopotamus.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +hippopotamus.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(hippopotamus.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+hippopotamus.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
@@ -184,20 +218,27 @@ function showAllAnimalElements(animalType){
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(elephant.age))
+                ageText.appendChild(document.createTextNode('Âge: '+elephant.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(elephant.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +elephant.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(elephant.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+elephant.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
@@ -220,20 +261,27 @@ function showAllAnimalElements(animalType){
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(flamingo.age))
+                ageText.appendChild(document.createTextNode('Âge: '+flamingo.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(flamingo.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +flamingo.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(flamingo.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+flamingo.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
@@ -256,20 +304,27 @@ function showAllAnimalElements(animalType){
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(pelican.age))
+                ageText.appendChild(document.createTextNode('Âge: '+pelican.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(pelican.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +pelican.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(pelican.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+pelican.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
@@ -292,20 +347,27 @@ function showAllAnimalElements(animalType){
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(whitewolve.age))
+                ageText.appendChild(document.createTextNode('Âge: '+whitewolve.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(whitewolve.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +whitewolve.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(whitewolve.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+whitewolve.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
@@ -328,20 +390,27 @@ function showAllAnimalElements(animalType){
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(rhinocero.age))
+                ageText.appendChild(document.createTextNode('Âge: '+rhinocero.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(rhinocero.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +rhinocero.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(rhinocero.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+rhinocero.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
@@ -364,20 +433,27 @@ function showAllAnimalElements(animalType){
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(seal.age))
+                ageText.appendChild(document.createTextNode('Âge: '+seal.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(seal.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +seal.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(seal.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+seal.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
@@ -400,20 +476,27 @@ function showAllAnimalElements(animalType){
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(monkey.age))
+                ageText.appendChild(document.createTextNode('Âge: '+monkey.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(monkey.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +monkey.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(monkey.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+monkey.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
@@ -436,20 +519,27 @@ function showAllAnimalElements(animalType){
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(panda.age))
+                ageText.appendChild(document.createTextNode('Âge: '+panda.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(panda.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +panda.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(panda.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+panda.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
@@ -472,20 +562,27 @@ function showAllAnimalElements(animalType){
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(lemur.age))
+                ageText.appendChild(document.createTextNode('Âge: '+lemur.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(lemur.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +lemur.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(lemur.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+lemur.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
@@ -508,20 +605,27 @@ function showAllAnimalElements(animalType){
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(crocodile.age))
+                ageText.appendChild(document.createTextNode('Âge: '+crocodile.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(crocodile.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +crocodile.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(crocodile.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+crocodile.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);
@@ -544,20 +648,27 @@ function showAllAnimalElements(animalType){
                 let ageText = document.createElement('h4')
                 ageText.setAttribute("class", "animalDetails");
                 ageText.setAttribute("id", "animalAge");
-                ageText.appendChild(document.createTextNode(snake.age))
+                ageText.appendChild(document.createTextNode('Âge: '+snake.age))
                 div.appendChild(ageText)
         
                 let sexText = document.createElement('h4')
                 sexText.setAttribute("class", "animalDetails");
                 sexText.setAttribute("id", "animalSex");
-                sexText.appendChild(document.createTextNode(snake.sex))
+                sexText.appendChild(document.createTextNode('Sexe: ' +snake.sex))
                 div.appendChild(sexText)
         
                 let visitText = document.createElement('h4')
                 visitText.setAttribute("class", "animalDetails");
                 visitText.setAttribute("id", "animalSex");
-                visitText.appendChild(document.createTextNode(snake.lastMedicalVisit))
+                visitText.appendChild(document.createTextNode('Dernière visite médicale: '+snake.lastMedicalVisit))
                 div.appendChild(visitText)
+
+                if(localStorage.getItem('currentChoosenAnimal')){
+                    
+                    let headerText = document.getElementById('header');
+                    headerText.innerText = "Zèbres"
+
+                }
         
         
                 tree.appendChild(div);

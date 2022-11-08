@@ -1,0 +1,18 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.box{
+    background: gray;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+#header{
+    background: #313131;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+}

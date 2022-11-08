@@ -7,18 +7,22 @@
 
     <link rel="stylesheet" href="./styles/style.css">
     <script type="text/javascript" src="./scripts/index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
 
     <title>TEMPORARY INDEX</title>
 
 </head>
 <body>
     <div class="login">
-        <form>
-            <input type="text" id="USER" placeholder="Username">
-            <input type="password" id= "PASS" placeholder="Password">
-            <input type="button" id="SUBMIT" value="Login" onclick="validate()">
-            <h3 id="incorrectPass"></h3>
-        </form>
+        <div class="box" id="BlocMenu">
+            <form>
+                <h4 id="ConnexionSoigneurs">Connexion Soigneurs</h4>
+                <input type="text" id="USER" placeholder="Username" class="InputCase">
+                <input type="password" id= "PASS" placeholder="Password" class="InputCase">
+                <input type="button" id="SUBMIT" value="Login" onclick="validate()">
+                <h3 id="incorrectPass"></h3>
+            </form>
+        </div>
     </div>
 </body>
 </html>
