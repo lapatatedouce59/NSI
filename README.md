@@ -16,3 +16,5 @@
 - Cléo D.
 - Tom V.
 - Tamara L.
+
+- [x] #1
