@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-image: url('../img/background.png');
     text-align: center;
     font-size: 30px;
     margin:auto;
@@ -9,14 +9,28 @@ body {
 #BlocMenu{
     width: 500px;
     height:600px;
-    background-color: rgb(192, 255, 155);
+    background-color: #DCF5CD;
     border-radius: 30px;
     border-color: black;
     border: 10px;
+    margin: auto;
 }
+
+#descText{
+    width: 500px;
+    height: 40px;
+    font-size: 30px;
+    color: #AEAEAE;
+}
+
+#logo-zoo{
+    margin-top: 50px;
+}
+
 #ConnexionSoigneurs{
-    color:white;
+    color:rgb(0, 0, 0);
     font-size: 60px;
+    height: 30px;
     -webkit-text-stroke:0.01px;
     -webkit-text-stroke-color: black;
 }
@@ -49,13 +63,29 @@ body {
     width: 200px;
     height: 60px;
     border-radius: 30px;
-    background-color: rgb(75,180,50);
-    border-width: 10px;
+    background-color: rgb(126, 224, 102);
+    border-width: 5px;
     border-color:black;
     color:white;
-    font-size: 50px;
-    -webkit-text-stroke:2px;
+    font-size: 30px;
+    -webkit-text-stroke:1px;
     -webkit-text-stroke-color: black;
+    margin-top: 30px;
+    transition: 500ms;
+}
+#SUBMIT:hover{
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgb(183, 255, 165);
+    border-width: 1px;
+    border-color:black;
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    -webkit-text-stroke:1px;
+    -webkit-text-stroke-color: black;
+    margin-top: 30px;
+    transition: 500ms;
 }
 #ImageGauche{
     float: left;
