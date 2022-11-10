@@ -5,13 +5,10 @@ body {
     margin:auto;
     font-family: 'Abel', serif;
     font-size: 48px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 #BlocMenu{
     width: 500px;
-    height:600px;
+    height:550px;
     background-color: #DCF5CD;
     border-radius: 30px;
     border-color: black;
@@ -31,15 +28,16 @@ body {
 }
 
 #ConnexionSoigneurs{
-    color:rgb(0, 0, 0);
+    color:rgb(255,255,255);
     font-size: 60px;
     height: 30px;
-    -webkit-text-stroke:0.01px;
+    -webkit-text-stroke:0.1px;
     -webkit-text-stroke-color: black;
 }
 
 #incorrectPass{
     color: red;
+    font-size: 20px;
 }
 #ContactProb{
     color:black;
@@ -67,7 +65,7 @@ body {
     height: 60px;
     border-radius: 30px;
     background-color: rgb(126, 224, 102);
-    border-width: 5px;
+    border-width: 1px;
     border-color:black;
     color:white;
     font-size: 30px;
@@ -86,7 +84,7 @@ body {
     color:rgb(0, 0, 0);
     font-size: 30px;
     -webkit-text-stroke:1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: white;
     margin-top: 30px;
     transition: 500ms;
 }
