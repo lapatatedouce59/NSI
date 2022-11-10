@@ -14,5 +14,5 @@
 
 ## Contributeurs
 - Cléo D.
-- Tom V.
+- fglx350
 - Tamara L.
