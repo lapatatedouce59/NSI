@@ -5,6 +5,9 @@ body {
     margin:auto;
     font-family: 'Abel', serif;
     font-size: 48px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #BlocMenu{
     width: 500px;
