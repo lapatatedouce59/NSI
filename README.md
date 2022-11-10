@@ -10,9 +10,11 @@
 - :ballot_box_with_check: Renseignements basiques des animaux (âge, prénom, dernière visite...)
 - :blue_square: Changement dynamique de ces informations
 - :blue_square: Interface user-friendly
-- :blue_square: Changement dynamique de ces informations
+- :blue_square: Possibilité de reset le mot de passe
+- :blue_square: Aide dans la page
 
 ## Contributeurs
+- Patate Douce 👑
 - Cléo D.
 - fglx350
 - Tamara L.
