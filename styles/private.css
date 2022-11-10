@@ -7,10 +7,9 @@
 #headerp2{
     background: #313131;
     padding: 20px;
-
     margin-bottom: 30px;
     display: grid;
-    width: 1900px;
+    width: calc(width*height);
     align-items: center;
     justify-content: space-between;
     grid-template-columns: 400px 300px;
