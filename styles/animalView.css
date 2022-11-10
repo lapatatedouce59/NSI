@@ -16,6 +16,29 @@
     padding: 20px;
     font-size: 40px;
 }
-
+#UItryLine1{
+    border-radius: 35px;
+    background-image: url('test.png');
+    width: 280px;
+    height: 135px;
+    left: 150px;
+    top: 200px;
+}
+#UItryLine2{
+    border-radius: 35px;
+    background-image: url('test.png');
+    width: 280px;
+    height: 135px;
+    left: 300px;
+    top: 400px;
+}
+#UItryLine3{
+    border-radius: 35px;
+    background-image: url('test.png');
+    width: 280px;
+    height: 135px;
+    left: 450px;
+    top: 600px;
+}
 
 
