@@ -31,3 +31,32 @@
     height: auto;
     margin-left: 20px;
 }
+
+table{
+    width: 90%;
+    margin: auto;
+}
+
+td{
+    text-align: center;
+}
+
+input{
+    width: 282px;
+    height: 135px;
+    margin-bottom: 40px;
+    font-size: 0;
+    border: 0;
+    border-radius: 31px;
+}
+
+input:hover{
+    width: 282px;
+    height: 135px;
+    margin-bottom: 40px;
+    font-size: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.288);
+    background-blend-mode: multiply;
+    transition: 300ms;
+}
