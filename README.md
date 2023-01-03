@@ -18,3 +18,5 @@
 - Cléo D.
 - fglx350
 - Tamara L.
+
+COPYRIGHT https://github.com/lapatatedouce59/NSI/
