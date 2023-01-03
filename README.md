@@ -19,4 +19,6 @@
 - fglx350
 - Tamara L.
 
+> URL de la page de test: https://temp.pmdapp.fr
+
 COPYRIGHT https://github.com/lapatatedouce59/NSI/
